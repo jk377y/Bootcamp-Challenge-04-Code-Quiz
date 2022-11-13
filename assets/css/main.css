@@ -18,18 +18,13 @@
 body {
     height: 100vh;
     width: 100vw;
-    /* I wanted to implement some flashy looks */
     background: linear-gradient(-45deg, black, crimson, orange, yellow, green, blue, purple, black);
     background-size: 300% 300%;
     animation: change 10s ease-in-out infinite;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-/* needed for the gradient background animation */
 @keyframes change {
     0%{
         background-position: 0 50%;
@@ -42,16 +37,82 @@ body {
     }
 }
 
-h1 {
+h1, h2, h3 {
     color: var(--text);
+}
+
+h1 {
+    font-size: 36px;
 }
 
 h2 {
-    color: var(--text);
+    font-size: 32px;
 }
 
 h3 {
-    color: var(--text); 
+    font-size: 28px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px;*/
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 6px solid var(--border);
+}
+
+.highScore {
+    margin-left: 15px;
+    border: 4px solid var(--border);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px;
+    background-color: var(--windowGray);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.projectName {
+    border: 4px solid var(--border);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px;
+    background-color: var(--windowGray);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.timer {
+    margin-right: 15px;
+    border: 4px solid var(--border);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px;
+    background-color: var(--windowGray);
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding: 10px;
+}
+
+.countdown {
+    font-size: 24px;
+    color: var(--wrong);
+}
+
+.mainCard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 75%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 .quizCard {
@@ -60,113 +121,48 @@ h3 {
     box-shadow: 5px 5px 20px 2px;
     background-color: var(--bgGray);
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     width: 600px;
-    max-width: 100%;
-    padding: 10px
-}
-
-.topWindows {
-    display: flex;
-    justify-content: space-around;
-    width: 150px;
-
-}
-
-.timer, .viewHighScore {
-    border: 4px solid var(--border);
-    border-radius: 30px;
-    box-shadow: 1px 1px 5px 1px;
-    margin: 15px;
-    padding: 15px;
-    background-color: var(--windowGray);
-    text-align: center;
-}
-
-.countdown {
-    color: crimson;
-}
-
-.beginButtons {
-    display: grid;
-    border-radius: 30px;
-    margin: 15px;
-}
-
-.startQuizButton {
-    border: 3px solid black;
-    border-radius: 15px;
-    width: 150px;
-    height: 35px;
-    background-color: var(--buttonColor);
-    box-shadow: 1px 1px 5px 1px;
-}
-
-.nextButton {
-    border: 3px solid var(--border);
-    border-radius: 15px;
-    width: 150px;
-    height: 35px;
-    background-color: var(--buttonColor);
-    box-shadow: 1px 1px 5px 1px;
-}
-
-.quizQuestion {
-    background-color: var(--windowGray);
-    border: 4px solid var(--border);
-    border-radius: 30px;
-    box-shadow: 1px 1px 5px 1px;
-    margin: 15px;
-    padding: 25px;
-}
-
-.answerButtons {
-    display: grid;
-    grid-template: auto auto / auto auto;
-    gap: 10px;
+    max-width: 75%;
+    padding: 10px;
 }
 
 .button {
     border: 3px solid var(--border);
     border-radius: 15px;
     width: 200px;
-    height: 75px;
+    height: 50px;
     background-color: var(--buttonColor);
-    font-size: 25px;
     font-weight: bold;
     box-shadow: 1px 1px 5px 1px;
 }
 
-.button:hover, .startQuizButton:hover, .nextButton:hover  {
-    border-color: var(--hover);
+.messageBox {
+    background-color: var(--windowGray);
+    border: 4px solid var(--border);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px;
+    margin: 15px;
+    padding: 25px;
+    width: 90%;
 }
 
-#button1 {
-
+.questionBox {
+    color: var(--text);
 }
 
-#button2 {
-
-}
-
-#button3 {
-
-}
-
-#button4 {
-
-}
-
-.button.correct {
-    background-color: var(--correct);
-}
-
-.button.wrong {
-    background-color: var(--wrong);
+.answerButtons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .hide {
     display: none;
+}
+
+.button:hover {
+    border-color: var(--hover);
 }
