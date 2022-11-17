@@ -22,7 +22,7 @@ No installation required.
 
 ## Usage
 
-This webpage is to be viewed at https://jk377y.github.io/Challenge-04/ 
+This webpage is to be viewed at https://jk377y.github.io/Challenge-04-Code-Quiz/ 
 
 ![screenshot of the homepage](./assets/images/javascript_code_quiz.PNG)
 
