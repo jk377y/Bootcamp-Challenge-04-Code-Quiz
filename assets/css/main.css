@@ -8,7 +8,7 @@
     --windowGray: rgba(138, 138, 138, 0.329);
     --bgGray: rgba(83, 83, 83, 0.534);
     --border: rgb(0, 0, 0);
-    --hover: rgb(255, 255, 255);
+    --hover: rgb(255, 255, 0);
     --buttonColor: rgb(48, 48, 48);
     --text: rgb(255, 255, 255);
     --correct: green;
@@ -37,32 +37,36 @@ body {
     }
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: var(--text);
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 10px;*/
     margin-bottom: 10px;
     padding-bottom: 10px;
     padding-top: 15px;
     height: 20%;
     background-color: rgba(0, 0, 0, 0.534);
     border: 6px solid var(--border);
+    width: 100vw;
 }
 
 .highScore {
@@ -74,6 +78,12 @@ h3 {
     display: flex;
     align-items: center;
     padding: 10px;
+    cursor:pointer;
+}
+
+.highScore:hover {
+    border-color: var(--hover);
+    cursor: pointer;
 }
 
 .projectName {
@@ -135,7 +145,6 @@ h3 {
     width: 200px;
     height: 50px;
     background-color: var(--buttonColor);
-    font-weight: bold;
     box-shadow: 1px 1px 5px 1px;
 }
 
@@ -147,10 +156,6 @@ h3 {
     margin: 15px;
     padding: 25px;
     width: 90%;
-}
-
-.questionBox {
-    color: var(--text);
 }
 
 .answerButtons {
@@ -165,4 +170,89 @@ h3 {
 
 .button:hover {
     border-color: var(--hover);
+    cursor: pointer;
+} 
+
+.scoreBoardTitle {
+    margin-right: 15px;
+    border: 4px solid var(--border);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 1px;
+    background-color: var(--windowGray);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rankedScoreChart {
+    display: flex;
+}
+
+.ol-namesRanked {
+    display: flex;
+    flex-direction: column;    
+    width: 20rem;
+    list-style: none;
+}
+
+.ul-finalScores {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.weAreAllWinners {
+    background-color: var(--bgGray);
+    border: 2px solid black;
+    margin: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    color: var(--text)
+}
+
+.weAreAllWinnersPoints {
+    background-color: var(--bgGray);
+    border: 2px solid black;
+    margin: 2px;
+    font-size: 18px;
+    text-align: right;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--text);
+}
+
+.first {
+    color: gold;
+}
+
+.second {
+    color: rgb(211, 211, 211);
+}
+
+.third {
+    color: rgb(228, 156, 0)
+}
+
+.text {
+    color:rgba(201, 255, 151, 0.432)
+}
+
+.returnToMainPage {
+    border: 3px solid var(--border);
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    background-color: var(--buttonColor);
+    box-shadow: 1px 1px 5px 1px;
+    margin-top: 10px;
+    float: right;
+}
+
+.correct {
+    background-color: var(--correct);
+}
+
+.wrong {
+    background-color: var(--wrong);
 }
