@@ -10,34 +10,61 @@
 <body>
     
     <section class="header">
-        <div class="highScore"><h3>High<br>Score</h3></div>
+        <div id="highScore" class="highScore"><h3>HighScore</h3></div>
         <div class="projectName"><h1>JavaScript<br>Code Quiz</h1></div>
-        <div class="timer"><h3>Timer<br><span id="countdown" class="countdown">0:00</span></h3></div>
+        <div class="timer"><h3>Timer<br><span id="countdown" class="countdown"></span></h3></div>
     </section>
 
     <section class="mainCard">
         <section class="quizCard">
             <div>
                 <div><button id="startQuiz" class="button"><h3>Start Quiz</h3></button></div>
-                <div><button id="nextButton" class="button hide"><h3>Next</h3></button></div>
+                <!-- disabling this button for now -->
+                <!-- <div><button id="nextButton" class="button hide"><h3>Next</h3></button></div> -->
             </div>
 
             <div id="messageBox" class="messageBox hide">
-                <div><h2 class="questionBox">Question goes here</h2></div>
+                <div><h2 id="questionBox" class="questionBox">Answer the JavaScript questions.</h2></div>
             </div>
 
             <div id="answerButtons" class="answerButtons hide">
-                <button id="button1" class="button"><h3>Button 1</h3></button>
-                <button id="button2" class="button"><h3>Button 2</h3></button>
-                <button id="button3" class="button"><h3>Button 3</h3></button>
-                <button id="button4" class="button"><h3>Button 4</h3></button>
+                <button id="button1" class="button"><h4 class="answers" data-number="1">A</h4></button>
+                <button id="button2" class="button"><h4 class="answers" data-number="2">B</h4></button>
+                <button id="button3" class="button"><h4 class="answers" data-number="3">C</h4></button>
+                <button id="button4" class="button"><h4 class="answers" data-number="4">D</h4></button>
             </div>
-
-
+            <div id="titlescreen" class="hide">
+                <div class='scoreBoardTitle'><h2>High Scores</h2></div>
+                <div class="rankedScoreChart">
+                    <ol class="ol-namesRanked">
+                        <li class="weAreAllWinners first"><nbl>1. </nbl>aaaaa aaaaa</li>
+                        <li class="weAreAllWinners second"><nbl>2. </nbl>bbbbb bbbbb</li>
+                        <li class="weAreAllWinners third"><nbl>3. </nbl>ccccc ccccc</li>
+                        <li class="weAreAllWinners text"><nbl>4. </nbl>ddddd ddddd</li>
+                        <li class="weAreAllWinners text"><nbl>5. </nbl>eeeee eeeee</li>
+                        <li class="weAreAllWinners text"><nbl>6. </nbl>fffff fffff</li>
+                        <li class="weAreAllWinners text"><nbl>7. </nbl>ggggg ggggg</li>
+                        <li class="weAreAllWinners text"><nbl>8. </nbl>hhhhh hhhhh</li>
+                        <li class="weAreAllWinners text"><nbl>9. </nbl>iiiii iiiii</li>
+                        <li class="weAreAllWinners text"><nbl>10. </nbl>jjjjj jjjjj</li>
+                    </ol>
+                    <ul class="ul-finalScores">
+                        <li class="weAreAllWinnersPoints first">999,999</li>
+                        <li class="weAreAllWinnersPoints second">888,888</li>
+                        <li class="weAreAllWinnersPoints third">777,777</li>
+                        <li class="weAreAllWinnersPoints text">66,666</li>
+                        <li class="weAreAllWinnersPoints text">55,555</li>
+                        <li class="weAreAllWinnersPoints text">44,444</li>
+                        <li class="weAreAllWinnersPoints text">33,333</li>
+                        <li class="weAreAllWinnersPoints text">22,222</li>
+                        <li class="weAreAllWinnersPoints text">11,111</li>
+                        <li class="weAreAllWinnersPoints text">0</li>
+                    </ul>                    
+                </div>
+                <button id="returnToMainPage" class="returnToMainPage button"><h4>Home</h4></button>
+            </div>
         </section>
     </section>
-
-
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
