@@ -1,6 +1,8 @@
-JS-Coding-Quiz
 
-JS-Coding-Quiz
+JS-Knowledge-Test
+
+
+JS-Knowledge-Test
 
 ## Description
 
