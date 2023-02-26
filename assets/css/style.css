@@ -1,20 +1,24 @@
+/* setting some basic css resets */
 *, ::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
+/* creating reusable variables */
 :root {
     --windowGray: rgba(138, 138, 138, 0.329);
     --bgGray: rgba(83, 83, 83, 0.534);
     --border: rgb(0, 0, 0);
     --hover: rgb(255, 255, 0);
-    --buttonColor: rgb(48, 48, 48);
+    --buttonColor: rgba(48, 48, 48, 0.472);
     --text: rgb(255, 255, 255);
     --correct: green;
     --wrong: crimson;
 }
 
+/* decided to make the background "pretty" using animation with color gradients */
 body {
     height: 100vh;
     width: 100vw;
@@ -38,7 +42,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: var(--text);
+    color: white;
 }
 
 h1 {
@@ -145,7 +149,8 @@ h4 {
     width: 200px;
     height: 50px;
     background-color: var(--buttonColor);
-    box-shadow: 1px 1px 5px 1px;
+    color: white;
+    margin: 10px;
 }
 
 .messageBox {
@@ -164,95 +169,76 @@ h4 {
     flex-wrap: wrap;
 }
 
-.hide {
-    display: none;
-}
-
+/* hover effect when mouseover clickable buttons/links */
 .button:hover {
-    border-color: var(--hover);
     cursor: pointer;
+    border-color: var(--hover);
 } 
 
 .scoreBoardTitle {
-    margin-right: 15px;
+    margin-left: 15px;
     border: 4px solid var(--border);
     border-radius: 30px;
     box-shadow: 1px 1px 5px 1px;
     background-color: var(--windowGray);
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.rankedScoreChart {
     display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
-.ol-namesRanked {
-    display: flex;
-    flex-direction: column;    
-    width: 20rem;
-    list-style: none;
-}
-
-.ul-finalScores {
+#scoreList {
     display: flex;
     flex-direction: column;
-    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+#scoreList li {
+    color: white;
+    font-size: 24px;
 }
 
-.weAreAllWinners {
-    background-color: var(--bgGray);
-    border: 2px solid black;
-    margin: 2px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-    padding: 5px;
-    color: var(--text)
+#titleScreen {
+    text-align: center;
 }
-
-.weAreAllWinnersPoints {
-    background-color: var(--bgGray);
-    border: 2px solid black;
-    margin: 2px;
-    font-size: 18px;
-    text-align: right;
-    font-weight: bold;
-    padding: 5px;
-    color: var(--text);
-}
-
-.first {
-    color: gold;
-}
-
-.second {
-    color: rgb(211, 211, 211);
-}
-
-.third {
-    color: rgb(228, 156, 0)
-}
-
-.text {
-    color:rgba(201, 255, 151, 0.432)
-}
-
 .returnToMainPage {
     border: 3px solid var(--border);
     border-radius: 15px;
     width: 100px;
     height: 35px;
     background-color: var(--buttonColor);
-    box-shadow: 1px 1px 5px 1px;
     margin-top: 10px;
-    float: right;
+    text-align: center;
 }
 
+#endScreen h2, #endScreen p {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#initialsInput {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#submitBtn {
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    background-color: var(--buttonColor);
+    color: greenyellow;
+}
+
+/* setting correct/wrong colors for answer selection class */
 .correct {
     background-color: var(--correct);
 }
-
 .wrong {
     background-color: var(--wrong);
+}
+
+/* using hide/show for some of the display during different sections of the application */
+.hide {
+    display: none;
 }

@@ -1,13 +1,13 @@
-# Challenge-04-Code-Quiz
+JS-Coding-Quiz
 
-JavaScript Code Quiz
+JS-Coding-Quiz
 
 ## Description
 
 This is a JavaScript Code quiz that is designed to test my knowledge of JavaScript.  The event starts with 1 simple button, once clicked, will begin displaying the questions.  You have 1 minute to complete the quiz.  GOOD LUCK!
 
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -38,25 +38,19 @@ This webpage is to be viewed at https://jk377y.github.io/Challenge-04-Code-Quiz/
 
 Fabien Moreno @ https://www.linkedin.com/in/fabien-moreno/
 For collaboration, ideas and assistance.
-
+<br>
 Stefan Mischook @ https://www.youtube.com/c/StefanMischook for walkthroughs and explanation of JavaScript functions.
-
+<br>
 Mosh Hamedani @ https://www.codewithmosh.com for instructional videos on relavent topics.
-
+<br>
+WittCode @ https://www.youtube.com/@WittCode/videos for instructional videos on relavent topics.
+<br>
 W3 Schools @ https://validator.w3.org/ For use of HTML validator tool.
-
+<br>
 Mozilla @ https://developer.mozilla.org/en-us For reference for technical writing and structure.
-
+<br>
 
 ## License
-
-MIT License
-
-Copyright (c) 2022 James Kelly
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br>Copyright (c) 2023 James Kelly
+<br>Information on this license can be found at: (https://opensource.org/licenses/MIT)
